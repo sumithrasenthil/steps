@@ -47,22 +47,12 @@ function Steps(){
       </p>
 
       <div className="buttons">
-        <ButtonCom bgColor='#7950fe' color ='#fff' onClick={handlePrevious}>👈 <span>previous</span></ButtonCom>
-        <ButtonCom bgColor='#7950fe' color ='#fff' onClick={handleNext}><span>Next</span>👉</ButtonCom>
+        <button style={{backgroundColor: '#7950fe', color: '#fff'}} onClick={handlePrevious}>Previous</button>
+        <button style={{backgroundColor: '#7950fe', color: '#fff'}} onClick={handleNext}>Next</button>
       </div>
       
     </div>}
     </>
-  )
-  
-}
-
-function ButtonCom({bgColor, color, onClick, children }){
-  console.log("childrenchildrenchildren", children)
-  return(
-    <button style={{backgroundColor: bgColor, color: color }} onClick={onClick}>
-      {children}
-    </button>
   )
 }
 
